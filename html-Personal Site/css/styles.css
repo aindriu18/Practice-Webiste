@@ -24,6 +24,28 @@ h3{
 
 /************ CLASS SELECTORS ***************/
 
+.andrew{
+  height: 300px;
+  border-radius: 20%;
+ 
+}
+
+.bottom-div-home{
+
+  margin-top: 8%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.bottom-div-home a{
+  text-decoration: none;
+ color: #555;
+}
+
+.fit{
+  height: 200px;
+}
+
 .navbar{
     width: 100%;
     background-color: black;
@@ -92,6 +114,11 @@ h1{
 
 }
 
+.middle-div-home {
+
+  padding-left: 30%;
+  padding-right: 30%
+}
 
 .mountain{
     height: 100%;
@@ -113,7 +140,10 @@ h1{
  
 }
 
+
+
 /************ ID SELECTORS ***************/
+
 
 
 
