@@ -1,9 +1,9 @@
 $(function() {
 
-    $(".hello").mouseenter(function(){
+    $(".myBook").mouseenter(function(){
 
-        $(".hello").animate({fontSize:'50px'}, "fast");
-        $(".hello").animate({fontSize: '30px'},"slow");
+        $(".myBook").animate({fontSize:'50px'}, "fast");
+        $(".myBook").animate({fontSize: '30px'},"slow");
 
     });
       /* from its starting position, the cloud gradually moves left before coming back to its original position*/
@@ -173,7 +173,7 @@ $(function() {
 
 });
 
-/* gives the user the opportunity to toggle between the navbar with (.icon) */
+/* facilitates responsive viewing for the navbar on mobile devices */
 function menu() {
   var x = document.getElementById("myNavbar");
   if (x.className === "navbar") {
