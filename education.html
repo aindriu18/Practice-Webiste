@@ -2,154 +2,149 @@
 <html lang="en">
 
 <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Education</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Education</title>
 
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+    <link rel="stylesheet" href="./css/styles.css">
 
-        <script src="./libs/jquery.js"></script>
-        <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js">
-        </script>
-
-        <script src="./scripts/script.js"></script>
-        <script src="./scripts/jquery.csv.js"></script>
-
-        <script src="https://kit.fontawesome.com/8fa5dfe2e3.js"></script>
-        <link rel="icon" href="./favicon.ico">
+    <link rel="icon" href="./favicon.ico">
 
 </head>
 
 <body>
-        <div class="navbar" id="myNavbar">
-                <a href="index.html"><i class="fas fa-home"></i>Home</a>
-                <a href="education.html"><i class="fas fa-graduation-cap"></i>Education</a>
-                <a href="portfolio.html"><i class="fas fa-folder-open"></i>Portfolio</a>
-                <a href="interests.html"><i class="fas fa-futbol"></i>Interests</a>
-                <a href="contact.html"><i class="fas fa-address-book"></i>Contact</a>
-                <a href="javascript:void(0);" class="icon " onclick="menu()"><i class="fas fa-bars"></i></a>
-        </div>
+    <div class="navbar" id="myNavbar">
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+        <a href="education.html"><i class="fas fa-graduation-cap"></i>Education</a>
+        <a href="portfolio.html"><i class="fas fa-folder-open"></i>Portfolio</a>
+        <a href="interests.html"><i class="fas fa-futbol"></i>Interests</a>
+        <a href="contact.html"><i class="fas fa-address-book"></i>Contact</a>
+        <a href="javascript:void(0);" class="icon"><i class="fas fa-bars"></i></a>
+    </div>
 
-        <div class="top-div-edu">
-                <h1>Education</h1>
-                <h3>The Story Thus Far...</h3>
-                <img id="teacher" src="./Images/teacher.svg" alt="Teacher and Child" srcset="">
-                <!--Image from Pixabay-->
-        </div>
+    <div class="top-div-edu">
+        <h1>Education</h1>
+        <h3>The Story Thus Far...</h3>
+        <img id="teacher" src="./images/teacher.svg" alt="Teacher and Child cartoon image">
+        <!--Image from Pixabay-->
+    </div>
 
-        <div class="software-div">
-                <p>
-                        Here are my most recent results in the Software Development Apprenticeship Programme.
-                        So far, we have been assessed on pseudocode, object orientated programming, the principles of ICT systems and data security
-                        and web fundamentals. The grading system encompasses either a pass, merit or distinction. The course itself revolves hugely
-                        around continuous assessment and examinations. Be sure to check back regularly for more exam results!
-                </p>
-        </div>
+    <div class="software-div">
+        <p>
+            Here are my most recent results in the Software Development Apprenticeship Programme.
+            So far, we have been assessed on pseudocode, object orientated programming, the principles of ICT systems and data security
+            and web fundamentals. The grading system encompasses either a pass, merit or distinction. The course itself revolves hugely
+            around continuous assessment and examinations. Be sure to check back regularly for more exam results!
+        </p>
+    </div>
 
-        <div>
-                <h1>Software Development Apprenticeship</h1>
-                <table id="software">
-                        <tr>
-                                <th>Course Code</th>
-                                <th>Course Module</th>
-                                <th>Grade</th>
-                        </tr>
-                </table>
-        </div>
-
-
-
-        <div class="undergrad-uni">
-                <img src="./Images/UCD.png" alt="UCD">
-                <p>
-                        Before my escapades into the world of technology, I had a previous life of study and education. After completing my Leaving Cert
-                        in 2011, I entered University College Dublin at 17 where I studied history, politics and international relations for the
-                        next 3 years. I had a particular interest in revolutionary and paramilitary groups, both left and right on the political axis. I
-                        also enjoyed studying the history of the USSR and the Eastern bloc along with the history and politics of the Middle East and
-                        North Africa Region. In 2014, I graduated with a BA joint major in History Politics and International Relations.
-                </p>
-        </div>
-
-        <div>
-                <h1>Masters</h1>
-                <table id="masters">
-                        <tr>
-                                <th>Course Code</th>
-                                <th>Course Module</th>
-                                <th>Grade</th>
-                                <th>Grade Point Average</th>
-                        </tr>
-                </table>
-        </div>
-
-        <div>
-                <h1>Undergrad Year 3</h1>
-                <table id="year3">
-
-                        <tr>
-                                <th>Course Code</th>
-                                <th>Course Module</th>
-                                <th>Grade</th>
-                                <th>Grade Point Average</th>
-                 </tr>
-                </table>
-        </div>
-
-        <div>
-                <h1>Undergrad Year 2</h1>
-                <table id="year2">
-
-                        <tr>
-                                <th>Course Code</th>
-                                <th>Course Module</th>
-                                <th>Grade</th>
-                                <th>Grade Point Average</th>
-                        </tr>
-                </table>
-                </div>
-
-        <div>          
-                <h1>Undergrad Year 1</h1>
-                <table id="year1">
-
-                        <tr>
-                                <th>Course Code</th>
-                                <th>Course Module</th>
-                                <th>Grade</th>
-                                <th>Grade Point Average</th>
-                        </tr>
-                </table>
-        </div> 
-
-        <div class="book-pub">
-                <h1>Book Publication</h1>
-                <a href="https://www.amazon.co.uk/Millennials-Insight-Republicanism-Northern-Troubles-ebook/dp/B06XRF7J49/ref=sr_1_1?keywords=aindriu+inglis&qid=1561830276&s=gateway&sr=8-1"> <img class="myBook" src="./Images/eBook.JPG" alt="Aindriu Inglis Book Cover"></a>
-
-                <p>
-                        After I graduated in 2014, I decided I would like to continue my studies and complete a masters. In the same year, I began an MA in
-                        Nationalism and Ethnic Conflict in University College Dublin. This course enabled me to study revolutionary groups, paramilitary organisations 
-                        and conflict regions in more detail. As part of my course work, I had to write a 15,000 word dissertation. My piece focused
-                        primarily on the IRA and the Troubles in Northern Ireland. As you can see from my results table, I received an A- for my
-                        efforts. After a short period of time, my dissertation was picked up by <a href="https://www.bookhubpublishing.com/"> Book Hub Publishing</a> based
-                        in Co. Galway. The picture above is the cover for my <a href="https://www.amazon.co.uk/Millennials-Insight-Republicanism-Northern-Troubles-ebook/dp/B06XRF7J49/ref=sr_1_1?keywords=aindriu+inglis&qid=1561830276&s=gateway&sr=8-1">eBook</a> 
-                        which is available to buy on Amazon.
-                </p>
-
-        </div>
+    <div>
+        <h1>Software Development Apprenticeship</h1>
+        <table id="software" align="center">
+            <tr>
+                <th>Course Code</th>
+                <th>Course Module</th>
+                <th>Grade</th>
+            </tr>
+        </table>
+    </div>
 
 
 
-        <div class="bottom-navbar">
-                <a href="https://www.linkedin.com/in/aenglish1"><i class="fab fa-linkedin"></i></i>LinkedIn</a>
-                <a href="https://github.com/aindriu18"><i class="fab fa-github-square"></i>Github</a>
-                <a href="https://twitter.com/AndrewEnglish18"><i class="fab fa-twitter-square"></i>Twitter</a>
+    <div class="undergrad-uni">
+        <img src="./images/ucd.png" alt="UCD">
+        <p>
+            Before my escapades into the world of technology, I had a previous life of study and education. After completing my Leaving Cert
+            in 2011, I entered University College Dublin at 17 where I studied history, politics and international relations for the
+            next 3 years. I had a particular interest in revolutionary and paramilitary groups, both left and right on the political axis. I
+            also enjoyed studying the history of the USSR and the Eastern bloc along with the history and politics of the Middle East and
+            North Africa Region. In 2014, I graduated with a BA joint major in History Politics and International Relations.
+        </p>
+    </div>
 
-                <p>
-                        © Andrew English 2019. All rights reserved.
-                </p>
-        </div>
+    <div>
+        <h1>Masters</h1>
+
+        <table id="masters" align="center">
+            <tr>
+                <th>Course Code</th>
+                <th>Course Module</th>
+                <th>Grade</th>
+                <th>Grade Point Average</th>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h1>Undergrad Year 3</h1>
+        <table id="year3" align="center">
+            <tr>
+                <th>Course Code</th>
+                <th>Course Module</th>
+                <th>Grade</th>
+                <th>Grade Point Average</th>
+            </tr>
+        </table>
+    </div>
+
+    <div>
+        <h1>Undergrad Year 2</h1>
+        <table id="year2" align="center">
+
+            <tr>
+                <th>Course Code</th>
+                <th>Course Module</th>
+                <th>Grade</th>
+                <th>Grade Point Average</th>
+            </tr>
+        </table>
+    </div>
+
+    <div>          
+        <h1>Undergrad Year 1</h1>
+        <table id="year1" align="center">
+
+            <tr>
+                <th>Course Code</th>
+                <th>Course Module</th>
+                <th>Grade</th>
+                <th>Grade Point Average</th>
+            </tr>
+        </table>
+    </div> 
+
+    <div class="book-pub">
+        <h1>Book Publication</h1>
+        <a href="https://www.amazon.co.uk/Millennials-Insight-Republicanism-Northern-Troubles-ebook/dp/B06XRF7J49/ref=sr_1_1?keywords=aindriu+inglis&qid=1561830276&s=gateway&sr=8-1"> <img class="myBook" src="./images/e_book.jpg" alt="Aindriu Inglis Book Cover"></a>
+
+        <p>
+            After I graduated in 2014, I decided I would like to continue my studies and complete a masters. In the same year, I began an MA in
+            Nationalism and Ethnic Conflict in University College Dublin. This course enabled me to study revolutionary groups, paramilitary organisations 
+            and conflict regions in more detail. As part of my course work, I had to write a 15,000 word dissertation. My piece focused
+            primarily on the IRA and the Troubles in Northern Ireland. As you can see from my results table, I received an A- for my
+            efforts. After a short period of time, my dissertation was picked up by <a href="https://www.bookhubpublishing.com/"> Book Hub Publishing</a> based
+            in Co. Galway. The picture above is the cover for my <a href="https://www.amazon.co.uk/Millennials-Insight-Republicanism-Northern-Troubles-ebook/dp/B06XRF7J49/ref=sr_1_1?keywords=aindriu+inglis&qid=1561830276&s=gateway&sr=8-1">eBook</a> 
+            which is available to buy on Amazon.
+        </p>
+
+    </div>
+
+
+
+    <div class="bottom-navbar">
+        <a href="https://www.linkedin.com/in/aenglish1"><i class="fab fa-linkedin"></i></i>LinkedIn</a>
+        <a href="https://github.com/aindriu18"><i class="fab fa-github-square"></i>Github</a>
+        <a href="https://twitter.com/AndrewEnglish18"><i class="fab fa-twitter-square"></i>Twitter</a>
+
+        <p>
+            © Andrew English 2019. All rights reserved.
+        </p>
+    </div>
+    <script src="./libs/jquery.js"></script>
+    <script src="./libs/jquery.csv.js"></script>
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/education.js"></script>
+    <script src="https://kit.fontawesome.com/8fa5dfe2e3.js"></script>
 </body>
-
 </html>
