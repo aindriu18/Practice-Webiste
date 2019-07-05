@@ -1,11 +1,14 @@
 $(function() {
 
+  /*$("#contact-form").parsley(); */
+
     $(".myBook").mouseenter(function(){
 
         $(".myBook").animate({fontSize:'50px'}, "fast");
         $(".myBook").animate({fontSize: '30px'},"slow");
 
     });
+
       /* from its starting position, the cloud gradually moves left before coming back to its original position*/
     $(document).ready(function() {
       function topCloudLeft() {
@@ -33,6 +36,16 @@ $(function() {
 /* ---- pulling education details from a .csv file 
   that represents each year of education and the 
   corresponding modules and results*/
+
+  $.ajax({
+    type: "GET",
+    url: "./software.csv",
+    dataType: "text",
+    success: function(data) {
+      dataSoftware(data);
+
+    }
+  });
 
     $.ajax({
       type: "GET",
@@ -74,6 +87,29 @@ $(function() {
       }
     });
 
+
+    // Software apprenticeship data
+
+    function dataSoftware(data) {
+      
+
+      var jsonData = $.csv.toObjects(data);
+      console.table(jsonData);
+
+      $("#software").append();
+      for (i = 0; i < jsonData.length; ++i) {
+        //Looping through data to add data from csv file
+
+        var content = "<tr>" +
+          "<td>" + jsonData[i]["Course Code"] + "</td>" +
+          "<td>" + jsonData[i]["Course Module"] + "</td>" +
+          "<td>" + jsonData[i]["Grade"] + "</td>" +
+        "</tr>";
+
+        $("#software").append(content);
+
+      }
+    }
 
     // -- masters data
     function dataMasters(data) {
@@ -187,6 +223,10 @@ function menu() {
 /* gives data table structure and definition. Achieved through datatables CDN on education.html  */
 
 $(document).ready( function () {
+  $('#software').DataTable();
+} );
+
+$(document).ready( function () {
   $('#masters').DataTable();
 } );
 
@@ -201,3 +241,6 @@ $(document).ready( function () {
 $(document).ready( function () {
   $('#year1').DataTable();
 } );
+
+
+$("#contact-form").parsley();

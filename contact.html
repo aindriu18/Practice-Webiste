@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Contact Details</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/parsley.css">
     <script src="./libs/jquery.js"></script>
+    <script src="./libs/parsley.js"></script>
     <script src="./scripts/script.js"></script>
     <script src="https://kit.fontawesome.com/8fa5dfe2e3.js"></script>
     <link rel="icon" href="./favicon.ico">
@@ -29,46 +31,58 @@
     </div>
 
 
-    <h3>Contact Details</h3>
-    <ul>
-        <li>email -aindriuinglis@gmail.com</li>
-        <li>LinkedIn - <a href="https://www.linkedin.com/in/aenglish1/">aenglish1</a> </li>
-        <li>Twitter - <a href="https://twitter.com/AndrewEnglish18">@AndrewEnglish18</a></li>
-        <li>Mobile - 087 9019923</li>
-    </ul>
-
-    <hr>
-
-    <form enctype="text/plain" action="mailto:aindriuinglis@gmail.com" method="POST">
-
-        <label>Your Name</label>
-        <input type="text" name="yourName" value=""><br>
-
-        <label>Your email</label>
-        <input type="email" name="yourEmail"><br>
+    <div class="top-contact">
+        <h1>Contact Details</h3>
+            <p>If you would like to get in touch, you can fill in the form below. Otherwise, you can visit me in the
+                training centre.
+                Tips, tricks and recommendations are always welcome!
+            </p>
+    </div>
 
 
+    <div class="container">
+        <div class="row">
+          <div class="column">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18763.120042527808!2d-6.3746195!3d53.9958527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7794d2bbeb48f5e1!2sRSTC+Regional+Skills+%26+Training+Centre!5e0!3m2!1sen!2sie!4v1562232816049!5m2!1sen!2sie"
+                width="400" height="400" frameborder="0" style="border:0" allowfullscreen>
+            </iframe>
+          </div>
+          <div class="column">
+            <form id="contact-form" enctype="text/plain" action="mailto:aindriuinglis@gmail.com" method="POST">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name.." data-parsley-type="alphanum" data-parsley-required="true">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name.." data-parsley-required="true">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                  <option value="ireland">Ireland</option>
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="uk">UK</option>
+                <option value="usa">USA</option>
+                <option value="europe">Rest of Europe</option>
+                <option value="world">Rest of World</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px" data-parsley-required="true"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
 
-        <label>Your Message</label><br>
-        <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
-
-        <label>Do you want to sign up to my mailing list?</label>
-        <input type="checkbox"><br>
-        <input type="submit"> <br>
-
-
-
-    </form>
+   </div>
 
     <div class="bottom-navbar">
-            <a href="https://www.linkedin.com/in/aenglish1"><i class="fab fa-linkedin"></i></i>LinkedIn</a>
-            <a href="https://github.com/aindriu18"><i class="fab fa-github-square"></i>Github</a>
-            <a href="https://twitter.com/AndrewEnglish18"><i class="fab fa-twitter-square"></i>Twitter</a>
-    
-            <p> 
-                © Andrew English 2019. All rights reserved.
-            </p>
-    </div>  
+        <a href="https://www.linkedin.com/in/aenglish1"><i class="fab fa-linkedin"></i></i>LinkedIn</a>
+        <a href="https://github.com/aindriu18"><i class="fab fa-github-square"></i>Github</a>
+        <a href="https://twitter.com/AndrewEnglish18"><i class="fab fa-twitter-square"></i>Twitter</a>
+
+        <p>
+            © Andrew English 2019. All rights reserved.
+        </p>
+    </div>
 
 </body>
 
