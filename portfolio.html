@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
     <link rel="icon" href="./favicon.ico">    
 </head>
 
@@ -23,18 +25,35 @@
 
     </div>
 
-    <h3>My Hobbies</h3>
-    <p>
-        <ol>
-            <li>Gaelic Football</li>
-            <li>Politics</li>
-            <li>History</li>
-            <li>Reading</li>
-            <li>Writing</li>
-            <li>Coding</li>
-        </ol>
-    </p>
-    <hr>
+    <div class="top-div-portfolio">
+        <h1>Portfolio</h1>
+        <img id="portfolio" src="./images/portfolio.svg" alt="Image of man looking into portfolio file">
+
+    </div>
+
+    <div class=" middle-div-portfolio">
+        <h2>What I've been up to!</h2>
+        <p>
+            Here's a selection of some of my recent work. It includes, tests, assignments, projects, collaborations and presentations.
+            Check back regularly for more updates.
+        </p>
+    </div>
+
+
+    <div class="portfolio-slide">
+        <div class="pseudo">
+            <div><img id="pseudo1" src="./images/pseudo_1.JPG" alt="Copy of Pseudocode test"></div>
+            <div><img id="pseudo2" src="./images/pseudo_2.JPG" alt="Copy of Pseudocode test"> </div>
+        </div>
+
+        <p>
+            This was the first test I had during the programme. Learning a new language with C# was difficult enough never mind trying to
+            get to grips with Pseudocode. After several attempts and a crash course on Pseudocode lingo, I eventually got the hang of it
+            and understood why this is such an important part in the planning stage of writing clear and concise code. Togehter with one of my 
+            classmates, we produced the Pseudocode you can see above.
+        </p>
+    </div>
+
 
     
     <div class="bottom-navbar">
@@ -48,7 +67,9 @@
     </div>  
 
     <script src="./libs/jquery.js"></script>
+    <script type="text/javascript" src="./slick/slick.js"></script>    
     <script src="./scripts/script.js"></script>
+    <script src="./scripts/portfolio.js"></script>
     <script src="https://kit.fontawesome.com/8fa5dfe2e3.js"></script>
 </body>
 

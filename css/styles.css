@@ -210,6 +210,33 @@ h3 {
 }
 
 
+/******************************************* portfolio page ********************************************************/
+
+.middle-div-portfolio{
+  padding-bottom: 4%;
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-top: 4%;
+  text-align: center;
+}
+
+
+
+.portfolio-slide{
+  margin: 0 auto;
+  width: 50%;
+}
+
+.top-div-portfolio{
+
+  margin-top: 5%;
+
+}
+
+
+
+
+
 
 /******************************************* contact page ********************************************************/
 
@@ -279,6 +306,16 @@ input[type=submit]:hover {
 /******************************************* ID SELECTORS ********************************************************/
 
 
+
+/******************************************* portfolio page ********************************************************/
+
+#portfolio{
+  width: 50%;
+}
+
+
+
+
 /******************************************* education page ********************************************************/
 
 /*styles the table to have a particular font and width*/
@@ -294,13 +331,20 @@ input[type=submit]:hover {
 #masters th {
   background-color: black;
   color: white;
-  padding: 3%;
+  height: 20px;
+}
+
+#masters tr{
+  height: 50px;
 }
 
 /* each time the user hovers over a tr, it changes the background colour*/
 #masters tr:hover {
   background-color: #555;
 }
+
+/* Creates a zebra striped effect on each even numbered data entry on each table */
+#masters tr:nth-child(even) {background-color: #f2f2f2;}
 
 #software {
   border-collapse: collapse;
@@ -314,13 +358,20 @@ input[type=submit]:hover {
 #software th {
   background-color: black;
   color: white;
-  padding: 3%;
+  height: 20px;
+}
+
+#software tr{
+  height: 50px;
 }
 
 /* each time the user hovers over a tr, it changes the background colour*/
 #software tr:hover {
   background-color: #555;
 }
+
+/* Creates a zebra striped effect on each even numbered data entry on each table */
+#software tr:nth-child(even) {background-color: #f2f2f2;}
 
 #teacher {
   height: 30%;
@@ -339,13 +390,20 @@ input[type=submit]:hover {
 #year1 th {
   background-color: black;
   color: white;
-  padding: 3%;
+  height: 20px;
+}
+
+#year1 tr{
+  height: 50px;
 }
 
 /* each time the user hovers over a tr, it changes the background colour*/
 #year1 tr:hover {
-  background-color: #555;
+background-color: #555;
 }
+
+/* Creates a zebra striped effect on each even numbered data entry on each table */
+ #year1 tr:nth-child(even) {background-color: #f2f2f2;}
 
 #year2 {
   border-collapse: collapse;
@@ -359,13 +417,20 @@ input[type=submit]:hover {
 #year2 th {
   background-color: black;
   color: white;
-  padding: 3%;
+  height: 20px;
+}
+
+#year2 tr {
+  height: 50px;
 }
 
 /* each time the user hovers over a tr, it changes the background colour*/
 #year2 tr:hover {
   background-color: #555;
 }
+
+/* Creates a zebra striped effect on each even numbered data entry on each table */
+#year2 tr:nth-child(even) {background-color: #f2f2f2;}
 
 
 #year3 {
@@ -380,7 +445,11 @@ input[type=submit]:hover {
 #year3 th {
   background-color: black;
   color: white;
-  padding: 3%;
+  height: 20px;
+}
+
+#year3 tr{
+  height: 50px;
 }
 
 /* each time the user hovers over a tr, it changes the background colour*/
@@ -388,3 +457,6 @@ input[type=submit]:hover {
   background-color: #555;
 
 }
+
+/* Creates a zebra striped effect on each even numbered data entry on each table */
+#year3 tr:nth-child(even) {background-color: #f2f2f2;}
