@@ -124,18 +124,6 @@ h3 {
   width: 30%;
 }
 
-.book-pub {
-  margin-bottom: 4%;
-  margin-top: 4%;
-  padding-left: 30%;
-  padding-right: 30%;
-}
-
-.book-pub a {
-  color: #555;
-  text-decoration: none;
-
-}
 
 .bottom-cloud {
   height: auto;
@@ -158,16 +146,16 @@ h3 {
 }
 
 .fit {
-  width: 70%;
+  width: 50%;
 }
 
-.intact{
+.intact {
   padding-left: 30%;
   padding-right: 30%;
   padding-bottom: 10%;
 }
 
-.intact a{
+.intact a {
   text-decoration: none;
   color: #555;
 }
@@ -201,12 +189,38 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
+  .bottom-div-home {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .intact {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
   .middle-div-home {
     padding: 5%;
   }
 }
 
 /******************************************* education page ********************************************************/
+
+
+.book-pub {
+  margin-bottom: 4%;
+  margin-top: 4%;
+  padding-left: 30%;
+  padding-right: 30%;
+}
+
+.book-pub a {
+  color: #555;
+  text-decoration: none;
+
+}
 
 .software-div {
   padding-bottom: 4%;
@@ -228,26 +242,49 @@ h3 {
   padding-top: 4%;
 }
 
+@media screen and (max-width: 600px) {
+  .book-pub {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .software-div {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-div-edu {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .undergrad-uni {
+    padding: 5%;
+  }
+}
+
 
 /******************************************* portfolio page ********************************************************/
 
 
-.c-sharp-slide{
+.c-sharp-slide {
   margin-bottom: 6%;
   margin-top: 6%;
   padding-left: 30%;
   padding-right: 30%;
   text-align: center;
-  width: 40%;
+
 }
 
-.data-slide{
+.data-slide {
   margin-bottom: 6%;
   margin-top: 6%;
   padding-left: 30%;
   padding-right: 30%;
   text-align: center;
-  width: 40%;
 }
 
 
@@ -256,29 +293,31 @@ h3 {
   color: #555;
 }
 
+
+
 .data-slide p {
   margin-top: 10%;
 }
 
-.data-slide video{
-  width: 40%;
-
+.data-slide iframe{
+  height: 350px;
+  width: 315px;
 }
 
-.sql-slide{
+
+.sql-slide {
   margin-bottom: 6%;
   margin-top: 6%;
   padding-left: 30%;
   padding-right: 30%;
   text-align: center;
-  width: 40%;
 }
 
-.sql-slide p{
+.sql-slide p {
   margin-top: 10%;
 }
 
-.middle-div-portfolio{
+.middle-div-portfolio {
   padding-bottom: 4%;
   padding-left: 30%;
   padding-right: 30%;
@@ -287,24 +326,53 @@ h3 {
 }
 
 
-.portfolio-slide{
-  
+.portfolio-slide {
+
   margin-bottom: 6%;
   margin-top: 6%;
   padding-left: 30%;
   padding-right: 30%;
   text-align: center;
-  width: 40%;
-
+ 
 }
 
-.top-div-portfolio{
+
+.top-div-portfolio {
 
   margin-top: 5%;
 
 }
 
+@media screen and (max-width: 600px) {
+  .c-sharp-slide {
+    padding: 7%;
+  }
+}
 
+@media screen and (max-width: 600px) {
+  .data-slide {
+    padding: 7%;
+  }
+}
+
+
+@media screen and (max-width: 600px) {
+  .middle-div-portfolio {
+    padding: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .portfolio-slide {
+    padding: 7%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .sql-slide {
+    padding: 7%;
+  }
+}
 
 
 
@@ -355,11 +423,12 @@ input[type=submit]:hover {
 }
 
 .top-contact {
-  margin-left: 30%;
   margin-top: 5%;
-  margin-right: 30%;
-  text-align: center;
+  padding-left: 30%;
+  padding-right: 30%;
+  
 }
+
 
 /* Responsive layout - when the screen is less than 600px wide, the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
@@ -371,6 +440,21 @@ input[type=submit]:hover {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .container{
+    padding: 7%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .top-contact {
+    padding: 7%;
+  }
+}
+
+
+
+
 
 
 
@@ -378,17 +462,17 @@ input[type=submit]:hover {
 
 
 
-/******************************************* portfolio page ********************************************************/
+/******************************************* index page ********************************************************/
 
-#intact-logo{
-  width: 20%;
+#intact-logo {
+  width: 40%;
 }
 
 
 /******************************************* portfolio page ********************************************************/
 
 
-#c-sharp-para{
+#c-sharp-para {
   margin-top: 10%;
 }
 
@@ -396,12 +480,10 @@ input[type=submit]:hover {
   width: 50%;
 }
 
-#pseudo-para{
+#pseudo-para {
   margin-top: 10%;
 
 }
-
-
 
 
 
@@ -424,7 +506,7 @@ input[type=submit]:hover {
   height: 20px;
 }
 
-#masters tr{
+#masters tr {
   height: 50px;
 }
 
@@ -434,7 +516,9 @@ input[type=submit]:hover {
 }
 
 /* Creates a zebra striped effect on each even numbered data entry on each table */
-#masters tr:nth-child(even) {background-color: #f2f2f2;}
+#masters tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
 #software {
   border-collapse: collapse;
@@ -451,7 +535,7 @@ input[type=submit]:hover {
   height: 20px;
 }
 
-#software tr{
+#software tr {
   height: 50px;
 }
 
@@ -461,7 +545,9 @@ input[type=submit]:hover {
 }
 
 /* Creates a zebra striped effect on each even numbered data entry on each table */
-#software tr:nth-child(even) {background-color: #f2f2f2;}
+#software tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
 #teacher {
   height: 30%;
@@ -483,17 +569,19 @@ input[type=submit]:hover {
   height: 20px;
 }
 
-#year1 tr{
+#year1 tr {
   height: 50px;
 }
 
 /* each time the user hovers over a tr, it changes the background colour*/
 #year1 tr:hover {
-background-color: #555;
+  background-color: #555;
 }
 
 /* Creates a zebra striped effect on each even numbered data entry on each table */
- #year1 tr:nth-child(even) {background-color: #f2f2f2;}
+#year1 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
 #year2 {
   border-collapse: collapse;
@@ -520,7 +608,9 @@ background-color: #555;
 }
 
 /* Creates a zebra striped effect on each even numbered data entry on each table */
-#year2 tr:nth-child(even) {background-color: #f2f2f2;}
+#year2 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
 
 
 #year3 {
@@ -538,7 +628,7 @@ background-color: #555;
   height: 20px;
 }
 
-#year3 tr{
+#year3 tr {
   height: 50px;
 }
 
@@ -549,4 +639,22 @@ background-color: #555;
 }
 
 /* Creates a zebra striped effect on each even numbered data entry on each table */
-#year3 tr:nth-child(even) {background-color: #f2f2f2;}
+#year3 tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+
+
+/******************************************* contact page ********************************************************/
+
+@media screen and (max-width: 600px) {
+  #contact-form {
+    padding-right: 20%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #map {
+    padding: 1%;
+  }
+}
