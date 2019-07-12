@@ -13,6 +13,10 @@ body {
   text-align: center;
 }
 
+p {
+  font-size: large;
+}
+
 h1 {
   font-family: 'Sacramento', cursive;
   font-size: xx-large;
@@ -117,7 +121,7 @@ h3 {
 /******************************************* index page ********************************************************/
 .andrew {
   border-radius: 20%;
-  height: 300px;
+  width: 30%;
 }
 
 .book-pub {
@@ -142,7 +146,7 @@ h3 {
 }
 
 .bottom-div-home {
-  margin-bottom: 11%;
+  margin-bottom: 6%;
   margin-top: 8%;
   padding-left: 30%;
   padding-right: 30%;
@@ -154,7 +158,18 @@ h3 {
 }
 
 .fit {
-  height: 200px;
+  width: 70%;
+}
+
+.intact{
+  padding-left: 30%;
+  padding-right: 30%;
+  padding-bottom: 10%;
+}
+
+.intact a{
+  text-decoration: none;
+  color: #555;
 }
 
 .middle-div-home {
@@ -185,7 +200,11 @@ h3 {
   position: relative;
 }
 
-
+@media screen and (max-width: 600px) {
+  .middle-div-home {
+    padding: 5%;
+  }
+}
 
 /******************************************* education page ********************************************************/
 
@@ -212,6 +231,53 @@ h3 {
 
 /******************************************* portfolio page ********************************************************/
 
+
+.c-sharp-slide{
+  margin-bottom: 6%;
+  margin-top: 6%;
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: center;
+  width: 40%;
+}
+
+.data-slide{
+  margin-bottom: 6%;
+  margin-top: 6%;
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: center;
+  width: 40%;
+}
+
+
+.data-slide a {
+  text-decoration: none;
+  color: #555;
+}
+
+.data-slide p {
+  margin-top: 10%;
+}
+
+.data-slide video{
+  width: 40%;
+
+}
+
+.sql-slide{
+  margin-bottom: 6%;
+  margin-top: 6%;
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: center;
+  width: 40%;
+}
+
+.sql-slide p{
+  margin-top: 10%;
+}
+
 .middle-div-portfolio{
   padding-bottom: 4%;
   padding-left: 30%;
@@ -221,10 +287,15 @@ h3 {
 }
 
 
-
 .portfolio-slide{
-  margin: 0 auto;
-  width: 50%;
+  
+  margin-bottom: 6%;
+  margin-top: 6%;
+  padding-left: 30%;
+  padding-right: 30%;
+  text-align: center;
+  width: 40%;
+
 }
 
 .top-div-portfolio{
@@ -309,9 +380,28 @@ input[type=submit]:hover {
 
 /******************************************* portfolio page ********************************************************/
 
+#intact-logo{
+  width: 20%;
+}
+
+
+/******************************************* portfolio page ********************************************************/
+
+
+#c-sharp-para{
+  margin-top: 10%;
+}
+
 #portfolio{
   width: 50%;
 }
+
+#pseudo-para{
+  margin-top: 10%;
+
+}
+
+
 
 
 
