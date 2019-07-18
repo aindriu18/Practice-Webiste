@@ -15,7 +15,8 @@ jQuery(document).ready(function ($) {
       var jsonData = $.csv.toObjects(responeData);
 
       for (i = 0; i < jsonData.length; ++i) {
-
+        
+        // Displays headings required for table
         var content =
           "<tr>" +
           "<td>" + jsonData[i]["Course Code"] + "</td>" +
@@ -28,7 +29,8 @@ jQuery(document).ready(function ($) {
 
     })
     .fail(function (responseError) {
-
+      
+      // If for whatever reason the software table does not show, an error will display and you can download the file manually.
       var errorContent =
         "<tr>" +
         "<td colspan='4'>We are sorry, an error occured. Download the file <a href='/data/software.csv'>here</a>.</td>" +
@@ -51,6 +53,7 @@ jQuery(document).ready(function ($) {
 
       for (i = 0; i < jsonData.length; ++i) {
 
+         // Displays headings required for table
         var content =
           "<tr>" +
           "<td>" + jsonData[i]["Course Code"] + "</td>" +
@@ -64,7 +67,7 @@ jQuery(document).ready(function ($) {
 
     })
     .fail(function (responseError) {
-
+      // If for whatever reason the masters table does not show, an error will display and you can download the file manually.  
       var errorContent =
         "<tr>" +
         "<td colspan='4'>We are sorry, an error occured. Download the file <a href='/data/masters.csv'>here</a>.</td>" +
@@ -87,6 +90,7 @@ jQuery(document).ready(function ($) {
 
       for (i = 0; i < jsonData.length; ++i) {
 
+          // Displays headings required for table
         var content =
           "<tr>" +
           "<td>" + jsonData[i]["Course Code"] + "</td>" +
@@ -101,6 +105,7 @@ jQuery(document).ready(function ($) {
     })
     .fail(function (responseError) {
 
+        // If for whatever reason the year 3 table does not show, an error will display and you can download the file manually
       var errorContent =
         "<tr>" +
         "<td colspan='4'>We are sorry, an error occured. Download the file <a href='/data/year_3.csv'>here</a>.</td>" +
@@ -123,6 +128,7 @@ jQuery(document).ready(function ($) {
 
       for (i = 0; i < jsonData.length; ++i) {
 
+        // Displays headings required for table
         var content =
           "<tr>" +
           "<td>" + jsonData[i]["Course Code"] + "</td>" +
@@ -137,6 +143,7 @@ jQuery(document).ready(function ($) {
     })
     .fail(function (responseError) {
 
+      // If for whatever reason the year 2 table does not show, an error will display and you can download the file manually
       var errorContent =
         "<tr>" +
         "<td colspan='4'>We are sorry, an error occured. Download the file <a href='/data/year_2.csv'>here</a>.</td>" +
@@ -158,6 +165,7 @@ jQuery(document).ready(function ($) {
       var jsonData = $.csv.toObjects(responeData);
       for (i = 0; i < jsonData.length; ++i) {
 
+        // Displays headings required for table
         var content =
           "<tr>" +
           "<td>" + jsonData[i]["Course Code"] + "</td>" +
@@ -172,6 +180,7 @@ jQuery(document).ready(function ($) {
     })
     .fail(function (responseError) {
 
+        // If for whatever reason the year 1 table does not show, an error will display and you can download the file manually
       var errorContent =
         "<tr>" +
         "<td colspan='4'>We are sorry, an error occured. Download the file <a href='/data/year_1.csv'>here</a>.</td>" +

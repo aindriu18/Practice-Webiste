@@ -1,6 +1,8 @@
 jQuery(document).ready(function($) {
 
-  // Initialize the cloud animation effects
+  /* Initialises the cloud animation effects and moves both the bottom
+  and top clouds from left to right */
+
   topCloudRight();
   bottomCloudRight();
 
@@ -51,10 +53,24 @@ jQuery(document).ready(function($) {
 
   }
 
+
+/* Parsley is used to verify the legitmacy of the text inputs in the contact page.
+If something that's not an email is entered into the email box it will produce an error for example.
+Or, if you enter numbers into the first and last name it will not allow you submit the details.*/
+
   $("#contact-form > input[type='submit']").click(function(event) {
 
       $("#contact-form").parsley();
 
+  });
+
+
+  /* This gives the functionality of the "top" on each page. Once clicked, it brings users
+  back to the top of each page*/
+  $("#scrollToTop").click(function(event) {
+    $("html, body").animate({
+      scrollTop: (0)
+    }, 1000);
   });
 
 });  // End of jQuery Ready Document

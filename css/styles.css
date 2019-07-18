@@ -1,5 +1,7 @@
 /******************************************* FONT STYLING ********************************************************/
 
+
+/*Enables different fonts which are displayed throughout the website*/
 @import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento&display=swap');
 
 
@@ -96,7 +98,7 @@ h3 {
 }
 
 /*The "responsive" class is added to the navbar with JavaScript when the user clicks on the icon. 
-  This class makes the navbar look good on small screens by displaying the links vertically instead of horizontally) */
+  This class makes the navbar responsive on small screens and mobile devices by displaying the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .navbar.responsive {
     position: relative;
@@ -115,6 +117,36 @@ h3 {
   }
 }
 
+
+/* scroll to top allows users to seemlessly scroll back to the top of the page. It also functions on mobile devices*/
+#scrollToTop{
+  background-color: red;
+  border: none;
+  border-radius: 10px;
+  bottom: 0;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  outline: none;
+  padding: 1%;
+  position: fixed;
+  right: 30px;
+}
+
+/* when hovered over, the back to top button turns grey*/
+#scrollToTop:hover{
+  background-color: #555;
+}
+
+/* enables the top button to be responsive on mobile and tablet devices*/
+@media screen and (max-width: 600px) {
+  #scrollToTop{
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  right: auto;
+  } 
+}
 
 
 
@@ -188,18 +220,22 @@ h3 {
   position: relative;
 }
 
+
+/* Makes the text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .bottom-div-home {
     padding: 5%;
   }
 }
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .intact {
     padding: 5%;
   }
 }
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .middle-div-home {
     padding: 5%;
@@ -242,24 +278,28 @@ h3 {
   padding-top: 4%;
 }
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .book-pub {
     padding: 5%;
   }
 }
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .software-div {
     padding: 5%;
   }
 }
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .top-div-edu {
     padding: 5%;
   }
 }
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .undergrad-uni {
     padding: 5%;
@@ -343,31 +383,35 @@ h3 {
 
 }
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .c-sharp-slide {
     padding: 7%;
   }
 }
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .data-slide {
     padding: 7%;
   }
 }
 
-
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .middle-div-portfolio {
     padding: 5%;
   }
 }
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .portfolio-slide {
     padding: 7%;
   }
 }
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .sql-slide {
     padding: 7%;
@@ -440,12 +484,14 @@ input[type=submit]:hover {
   }
 }
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .container{
     padding: 7%;
   }
 }
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   .top-contact {
     padding: 7%;
@@ -499,7 +545,7 @@ input[type=submit]:hover {
   width: 40%;
 }
 
-/* changes the colour of the th to black and the writing to white */
+/* changes the colour of the "th" to black and the writing to white */
 #masters th {
   background-color: black;
   color: white;
@@ -510,7 +556,7 @@ input[type=submit]:hover {
   height: 50px;
 }
 
-/* each time the user hovers over a tr, it changes the background colour*/
+/* each time the user hovers over a "tr", it changes the background colour*/
 #masters tr:hover {
   background-color: #555;
 }
@@ -647,12 +693,14 @@ input[type=submit]:hover {
 
 /******************************************* contact page ********************************************************/
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   #contact-form {
     padding-right: 20%;
   }
 }
 
+/* Makes text responsive for mobile devices */
 @media screen and (max-width: 600px) {
   #map {
     padding: 1%;
