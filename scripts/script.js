@@ -74,3 +74,18 @@ Or, if you enter numbers into the first and last name it will not allow you subm
   });
 
 });  // End of jQuery Ready Document
+
+
+// checking if service worker API is enabled in the browser.
+if ("serviceWorker" in navigator) {
+  //An event listener that waits for the page to load completely.
+    window.addEventListener("load", () => {
+      navigator.serviceWorker
+      // A promise of a register, then and catch - very similar to a method
+      .register("sw_cached_site.js")
+      .then(reg => console.log("SW Registered."))
+      .catch(err => console.log(`SW Error: ${err}`));
+    });
+  } else {
+    console.log("Your browser does not support SW.");
+}
