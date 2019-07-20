@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(document).ready(function ($) {
 
   /* Initialises the cloud animation effects and moves both the bottom
   and top clouds from left to right */
@@ -31,7 +31,7 @@ jQuery(document).ready(function($) {
   }
 
   /* facilitates responsive viewing for the navbar on mobile devices */
-  $("#myNavbar").click(function(event) {
+  $("#myNavbar").click(function (event) {
 
     menu();
 
@@ -54,57 +54,60 @@ jQuery(document).ready(function($) {
   }
 
 
-/* Parsley is used to verify the legitmacy of the text inputs in the contact page.
-If something that's not an email is entered into the email box it will produce an error for example.
-Or, if you enter numbers into the first and last name it will not allow you submit the details.*/
+  /* Parsley is used to verify the legitmacy of the text inputs in the contact page.
+  If something that's not an email is entered into the email box it will produce an error for example.
+  Or, if you enter numbers into the first and last name it will not allow you submit the details.*/
 
-  $("#contact-form > input[type='submit']").click(function(event) {
+  $("#contact-form > input[type='submit']").click(function (event) {
 
-      $("#contact-form").parsley();
+    $("#contact-form").parsley();
 
   });
 
 
   /* This gives the functionality of the "top" on each page. Once clicked, it brings users
   back to the top of each page*/
-  $("#scrollToTop").click(function(event) {
+  $("#scrollToTop").click(function (event) {
     $("html, body").animate({
       scrollTop: (0)
     }, 1000);
   });
 
-});  // End of jQuery Ready Document
+}); // End of jQuery Ready Document
 
 
 // checking if service worker API is enabled in the browser.
 if ("serviceWorker" in navigator) {
   //An event listener that waits for the page to load completely.
-    window.addEventListener("load", () => {
-      navigator.serviceWorker
+  window.addEventListener("load", () => {
+    navigator.serviceWorker
       // A promise of a register, then and catch - very similar to a method
       .register("sw_cached_site.js")
       .then(reg => console.log("SW Registered."))
       .catch(err => console.log(`SW Error: ${err}`));
-    });
-  } else {
-    console.log("Your browser does not support SW.");
+  });
+} else {
+  console.log("Your browser does not support SW.");
 }
 
+
+// simple variable
 var w;
-​
+
+// web worker starting to load
 function startWorker() {
-  if (typeof(Worker) !== "undefined") {
-    if (typeof(w) == "undefined") {
+  if (typeof (Worker) !== "undefined") {
+    if (typeof (w) == "undefined") {
       w = new Worker("worker.js");
     }
-    w.onmessage = function(event) {
+    w.onmessage = function (event) {
       document.getElementById("result").innerHTML = event.data;
     };
   } else {
     document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
   }
 }
-​
+// stops the worker from counting
 function stopWorker() {
   w.terminate();
   w = undefined;
