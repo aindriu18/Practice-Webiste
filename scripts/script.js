@@ -37,6 +37,7 @@ jQuery(document).ready(function ($) {
 
   });
 
+  // Facilitates in making the nav bar responsive
   function menu() {
 
     var x = document.getElementById("myNavbar");
